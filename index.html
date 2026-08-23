@@ -3,445 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCH Diesel Mate - Representação Comercial</title>
+    <title>Diesel Mate - Bemhes Representação NCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #25d366;
+            --dark-color: #1a1a1a;
         }
-        body {
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .card h2 {
-            color: #0056b3;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 0.5rem;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 1.2rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .cta-section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            margin-top: 2rem;
-        }
-        .cta-section h2 {
-            margin-bottom: 1rem;
-            color: #222;
-        }
-        .btn-group {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.8rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
         }
         .btn-whatsapp {
-            background-color: #25D366;
+            background-color: #25d366;
+            color: white;
+            font-weight: bold;
         }
         .btn-whatsapp:hover {
-            background-color: #1ebc57;
+            background-color: #1da851;
+            color: white;
         }
-        .btn-email {
-            background-color: #0056b3;
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
         }
-        .btn-email:hover {
-            background-color: #004085;
+        .card-custom {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            background-color: #e9ecef;
-            color: #666;
-            font-size: 0.9rem;
+        .card-custom:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>NCH Diesel Mate</h1>
-        <p>Aditivo completo desenvolvido para melhorar o desempenho do diesel</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BEMHES <span class="text-primary">REPRESENTAÇÃO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Demonstrações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#especificacoes">Especificações</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="#cotacao">Solicitar Cotação</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">DIESEL MATE - NCH</h1>
+            <p class="lead">Aditivo completo desenvolvido para otimizar o desempenho, proteger componentes e maximizar o rendimento do seu combustível.</p>
+            <div class="mt-4">
+                <a href="https://wa.me/5543988428240?text=Olá,%20gostaria%20de%20solicitar%20uma%20cotação%20do%20Diesel%20Mate." target="_blank" class="btn btn-whatsapp btn-lg me-2 my-1">
+                    <i class="fab fa-whatsapp me-2"></i> Cotar via WhatsApp
+                </a>
+                <a href="mailto:bemhesrepresentacao@gmail.com?subject=Solicitação de Cotação - Diesel Mate" class="btn btn-outline-light btn-lg my-1">
+                    <i class="fas fa-envelope me-2"></i> Cotar via E-mail
+                </a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="grid">
-            <div class="card">
-                <h2>Principais Benefícios</h2>
-                <ul>
-                    <li>Aumenta o número de Cetano em até 10% (3 a 4 pontos em média).</li>
-                    <li>Melhora a combustão e facilita a ignição do motor.</li>
-                    <li>Reduz emissões de fumaça preta e fuligem.</li>
-                    <li>Contém aditivo antidesgaste para proteger injetores e bombas.</li>
-                    <li>Limpa o sistema de combustível e previne goma, laca e borra.</li>
-                    <li>Desativa resíduos de metais pesados (especialmente cobre).</li>
-                </ul>
+    <section id="beneficios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Principais Características e Benefícios</h2>
+                <p class="text-muted">A tecnologia NCH para aumentar a durabilidade e eficiência da sua frota ou maquinário.</p>
             </div>
-
-            <div class="card">
-                <h2>Aplicações Recomendadas</h2>
-                <ul>
-                    <li>Motores a diesel rodoviário e marinho.</li>
-                    <li>Geradores de energia.</li>
-                    <li>Armazenamento de diesel a curto ou longo prazo.</li>
-                    <li>Veículos de serviço, construção, pavimentação e demolição.</li>
-                    <li>Setor agrícola, marinas, universidades e hotéis.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Componentes do Pacote</h2>
-                <ul>
-                    <li><strong>Amplificador de Cetano:</strong> eleva rendimento e combustão.</li>
-                    <li><strong>Desemulsificante:</strong> separa água para drenagem nos tanques.</li>
-                    <li><strong>Agentes Antidesgaste:</strong> película protetora contra corrosão.</li>
-                    <li><strong>Detergentes e Dispersantes:</strong> evitam obstruções.</li>
-                    <li><strong>Melhoradores de Fluxo a Frio:</strong> previnem gelificação.</li>
-                </ul>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-tachometer-alt feature-icon"></i></div>
+                        <h4>Aumenta o Cetano em até 10%</h4>
+                        <p class="text-muted">Melhora a ignição reduzindo o tempo de partida e o desgaste por detonação ao aumentar o número de Cetano (de 3 a 4 pontos em média).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-shield-alt feature-icon"></i></div>
+                        <h4>Reduz Desgaste e Atrito</h4>
+                        <p class="text-muted">Aditivo polimérico antidesgaste que lubrifica bombas e injetores contra o desgaste mecânico/químico do diesel ultrabaixo enxofre (S10).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-filter feature-icon"></i></div>
+                        <h4>Limpa Injetores e Bombas</h4>
+                        <p class="text-muted">Alto poder detergente que previne gomas, vernizes e borra de carbono. Atende aos rigorosos testes Cummins L-10.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-leaf feature-icon"></i></div>
+                        <h4>Reduz Emissões</h4>
+                        <p class="text-muted">Proporciona uma queima limpa, diminuindo drasticamente fumaça preta, fuligem e poluentes na atmosfera.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-snowflake feature-icon"></i></div>
+                        <h4>Fluxo a Frio e Estabilidade</h4>
+                        <p class="text-muted">Evita a gelificação do combustível em baixas temperaturas e previne a oxidação/decomposição durante armazenamentos longos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-vial feature-icon"></i></div>
+                        <h4>Desativadores de Metal</h4>
+                        <p class="text-muted">Desativa resíduos de metais pesados (como cobre), impedindo que atuem como catalisadores de oxidação.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="cta-section">
-            <h2>Solicite uma Cotação do NCH Diesel Mate</h2>
-            <p>Entre em contato diretamente para receber valores e condições comerciais exclusivas.</p>
-            <div class="btn-group">
-                <a class="btn btn-whatsapp" href="https://wa.me/5543988428240?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20do%20NCH%20Diesel%20Mate." target="_blank">
-                    Solicitar via WhatsApp
-                </a>
-                <a class="btn btn-email" href="mailto:bemhesrepresentacao@gmail.com?subject=Solicitação%20de%20Cotação%20-%20NCH%20Diesel%20Mate&body=Olá,%20gostaria%20de%20receber%20uma%20cotação%20para%20o%20produto%20NCH%20Diesel%20Mate.">
-                    Solicitar via E-mail
-                </a>
+    <section id="videos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Demonstrações Práticas em Vídeo</h2>
+                <p class="text-muted">Veja a performance e o teste de queima/eficiência do Diesel Mate na prática.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="ratio ratio-16x9">
+                            <video controls poster="">
+                                <source src="Diesel Mate .mp4" type="video/mp4">
+                                Seu navegador não suporta a exibição de vídeos HTML5.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Teste Prático 1</h5>
+                            <p class="card-text text-muted">Demonstração da eficiência e ação do produto frente aos aditivos convencionais do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="ratio ratio-16x9">
+                            <video controls poster="">
+                                <source src="Diesel Mate Fogo 2.mp4" type="video/mp4">
+                                Seu navegador não suporta a exibição de vídeos HTML5.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Teste de Inflamabilidade e Queima</h5>
+                            <p class="card-text text-muted">Comparativo do poder de combustão e rendimento térmico do Diesel Mate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="ratio ratio-16x9">
+                            <video controls poster="">
+                                <source src="Diesel Mate e.mp4" type="video/mp4">
+                                Seu navegador não suporta a exibição de vídeos HTML5.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Análise de Mistura e Resíduos</h5>
+                            <p class="card-text text-muted">Apresentação detalhada sobre dissipação de resíduos e proteção de tanques de armazenamento.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCH Diesel Mate - Representação Comercial</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 2.5rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
-        }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .card h2 {
-            color: #0056b3;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 0.5rem;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 1.2rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        /* Seção de Vídeos */
-        .section-title {
-            text-align: center;
-            color: #0056b3;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
-        }
-        .video-card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            display: flex;
-            flex-direction: column;
-        }
-        .video-card h3 {
-            background: #0056b3;
-            color: #fff;
-            padding: 0.8rem 1rem;
-            font-size: 1.1rem;
-            text-align: center;
-        }
-        .video-container {
-            width: 100%;
-            background: #000;
-        }
-        .video-container video {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            display: block;
-        }
-        .video-desc {
-            padding: 1rem;
-            font-size: 0.95rem;
-            color: #555;
-        }
-        /* Seção Call-to-Action */
-        .cta-section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 2.5rem 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-            margin-top: 2rem;
-        }
-        .cta-section h2 {
-            margin-bottom: 1rem;
-            color: #222;
-        }
-        .btn-group {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.9rem 2rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-whatsapp {
-            background-color: #25D366;
-        }
-        .btn-whatsapp:hover {
-            background-color: #1ebc57;
-        }
-        .btn-email {
-            background-color: #0056b3;
-        }
-        .btn-email:hover {
-            background-color: #004085;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 3rem;
-            background-color: #e9ecef;
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>NCH Diesel Mate</h1>
-        <p>Aditivo completo desenvolvido para melhorar o desempenho do diesel[cite: 1]</p>
-    </header>
-
-    <div class="container">
-        <!-- Grid de Benefícios e Informações -->
-        <div class="grid">
-            <div class="card">
-                <h2>Principais Benefícios</h2>
-                <ul>
-                    <li>Aumenta o número de Cetano em até 10% (3 a 4 pontos em média)[cite: 1].</li>
-                    <li>Melhora a combustão e facilita a ignição do motor[cite: 1].</li>
-                    <li>Reduz emissões de fumaça preta e fuligem[cite: 1].</li>
-                    <li>Contém aditivo antidesgaste para proteger injetores e bombas[cite: 1].</li>
-                    <li>Limpa o sistema de combustível e previne goma, laca e borra[cite: 1].</li>
-                    <li>Desativa resíduos de metais pesados (especialmente cobre)[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Aplicações Recomendadas</h2>
-                <ul>
-                    <li>Motores a diesel rodoviário e marinho[cite: 1].</li>
-                    <li>Geradores de energia[cite: 1].</li>
-                    <li>Armazenamento de diesel a curto ou longo prazo[cite: 1].</li>
-                    <li>Veículos de serviço, construção, pavimentação e demolição[cite: 1].</li>
-                    <li>Setor agrícola, marinas, universidades e hotéis[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Componentes do Pacote</h2>
-                <ul>
-                    <li><strong>Amplificador de Cetano:</strong> eleva rendimento e combustão[cite: 1].</li>
-                    <li><strong>Desemulsificante:</strong> separa água para drenagem nos tanques[cite: 1].</li>
-                    <li><strong>Agentes Antidesgaste:</strong> película protetora contra corrosão[cite: 1].</li>
-                    <li><strong>Detergentes e Dispersantes:</strong> evitam obstruções[cite: 1].</li>
-                    <li><strong>Melhoradores de Fluxo a Frio:</strong> previnem gelificação[cite: 1].</li>
-                </ul>
+    <section id="cotacao" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Solicite uma Cotação para sua Empresa</h2>
+            <p class="lead mb-4">Atendemos frotas, transportadoras, máquinas pesadas e indústrias com a linha de qualidade NCH.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a href="https://wa.me/5543988428240?text=Olá,%20gostaria%20de%20solicitar%20uma%20cotação%20do%20Diesel%20Mate." target="_blank" class="btn btn-whatsapp btn-lg px-4 gap-3">
+                            <i class="fab fa-whatsapp"></i> WhatsApp: (43) 98842-8240
+                        </a>
+                        <a href="mailto:bemhesrepresentacao@gmail.com?subject=Solicitação de Cotação - Diesel Mate" class="btn btn-primary btn-lg px-4">
+                            <i class="fas fa-envelope"></i> E-mail: bemhesrepresentacao@gmail.com
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Seção de Vídeos -->
-        <h2 class="section-title">Demonstrações em Vídeo</h2>
-        <div class="video-grid">
-            
-            <div class="video-card">
-                <h3>Demonstração de Queima e Cetano</h3>
-                <div class="video-container">
-                    <video controls preload="metadata">
-                        <source src="Diesel Mate Fogo 2.mp4" type="video/mp4">
-                        Seu navegador não suporta a exibição de vídeos em HTML5.
-                    </video>
-                </div>
-                <div class="video-desc">
-                    Teste Prático comparando o aumento do poder de queima e resposta dos motores com o NCH Diesel Mate.
-                </div>
-            </div>
-
-            <div class="video-card">
-                <h3>Teste de Limpeza e Separação de Água</h3>
-                <div class="video-container">
-                    <video controls preload="metadata">
-                        <source src="Diesel Mate e.mp4" type="video/mp4">
-                        Seu navegador não suporta a exibição de vídeos em HTML5.
-                    </video>
-                </div>
-                <div class="video-desc">
-                    Demonstração da ação de separação da água (desemulsificante) e limpeza rápida de contaminações e borras.
-                </div>
-            </div>
-
-            <div class="video-card">
-                <h3>Comparativo de Eficiência do Aditivo</h3>
-                <div class="video-container">
-                    <video controls preload="metadata">
-                        <source src="Diesel Mate .mp4" type="video/mp4">
-                        Seu navegador não suporta a exibição de vídeos em HTML5.
-                    </video>
-                </div>
-                <div class="video-desc">
-                    Análise comparativa demonstrando o efeito de queima e lubrificação do NCH Diesel Mate em relação a outros aditivos do mercado.
-                </div>
-            </div>
-
+    <footer class="bg-black text-center text-white-50 py-3">
+        <div class="container">
+            <small>&copy; Bemhes Representação & NCH Latin America. Todos os direitos reservados.</small>
         </div>
-
-        <!-- Seção de Cotação -->
-        <div class="cta-section">
-            <h2>Solicite uma Cotação do NCH Diesel Mate</h2>
-            <p>Entre em contato diretamente para receber valores e condições comerciais exclusivas para sua empresa.</p>
-            <div class="btn-group">
-                <a class="btn btn-whatsapp" href="https://wa.me/5543988428240?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20do%20NCH%20Diesel%20Mate." target="_blank">
-                    Solicitar via WhatsApp
-                </a>
-                <a class="btn btn-email" href="mailto:bemhesrepresentacao@gmail.com?subject=Solicitação%20de%20Cotação%20-%20NCH%20Diesel%20Mate&body=Olá,%20gostaria%20de%20receber%20uma%20cotação%20para%20o%20produto%20NCH%20Diesel%20Mate.">
-                    Solicitar via E-mail
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; Bemhes Representação Comercial - Representante Oficial NCH</p>
     </footer>
 
-</body>
-</html>
-    <footer>
-        <p>&copy; Bemhes Representação Comercial - Representante Oficial NCH</p>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
