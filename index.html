@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diesel Mate - Bemhes Representação NCH</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -15,7 +17,7 @@
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
             color: white;
-            padding: 100px 0;
+            padding: 90px 0;
         }
         .btn-whatsapp {
             background-color: #25d366;
@@ -34,6 +36,304 @@
             border: none;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+        .form-section {
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BEMHES <span class="text-primary">REPRESENTAÇÃO</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Demonstrações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#especificacoes">Aplicações</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="#cotacao">Solicitar Cotação</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">DIESEL MATE - NCH</h1>
+            <p class="lead">Aditivo completo desenvolvido para otimizar o desempenho, proteger componentes e maximizar o rendimento do seu combustível.</p>
+            <div class="mt-4">
+                <a href="#cotacao" class="btn btn-primary btn-lg me-2 my-1">
+                    <i class="fas fa-calculator me-2"></i> Calcular Economia / Cotação
+                </a>
+                <a href="https://wa.me/5543988428240" target="_blank" class="btn btn-whatsapp btn-lg my-1">
+                    <i class="fab fa-whatsapp me-2"></i> WhatsApp Direto
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Principais Benefícios -->
+    <section id="beneficios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Principais Características e Benefícios</h2>
+                <p class="text-muted">A tecnologia NCH para aumentar a durabilidade e eficiência da sua frota ou maquinário.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-tachometer-alt feature-icon"></i></div>
+                        <h4>Aumenta o Cetano em até 10%</h4>
+                        <p class="text-muted">Melhora a ignição reduzindo o tempo de partida e o desgaste por detonação ao aumentar o número de Cetano (de 3 a 4 pontos em média).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-shield-alt feature-icon"></i></div>
+                        <h4>Reduz Desgaste e Atrito</h4>
+                        <p class="text-muted">Aditivo polimérico antidesgaste que lubrifica bombas e injetores contra o desgaste mecânico/químico do diesel ultrabaixo enxofre (S10).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-filter feature-icon"></i></div>
+                        <h4>Limpa Injetores e Bombas</h4>
+                        <p class="text-muted">Alto poder detergente que previne gomas, vernizes e borra de carbono. Atende aos rigorosos testes Cummins L-10.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-leaf feature-icon"></i></div>
+                        <h4>Reduz Emissões</h4>
+                        <p class="text-muted">Proporciona uma queima limpa, diminuindo drasticamente fumaça preta, fuligem e poluentes na atmosfera.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-snowflake feature-icon"></i></div>
+                        <h4>Fluxo a Frio e Estabilidade</h4>
+                        <p class="text-muted">Evita a gelificação do combustível em baixas temperaturas e previne a oxidação/decomposição durante armazenamentos longos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center p-4">
+                        <div class="mb-3"><i class="fas fa-vial feature-icon"></i></div>
+                        <h4>Desativadores de Metal</h4>
+                        <p class="text-muted">Desativa resíduos de metais pesados (como cobre), impedindo que atuem como catalisadores de oxidação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Vídeos / Testes práticos -->
+    <section id="videos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Demonstrações Práticas em Vídeo</h2>
+                <p class="text-muted">Veja a performance e o teste de queima/eficiência do Diesel Mate na prática.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Vídeo 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="Diesel Mate .mp4" type="video/mp4">
+                                Seu navegador não suporta a exibição de vídeos HTML5.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Teste Prático 1</h5>
+                            <p class="card-text text-muted">Demonstração da eficiência e ação do produto frente aos aditivos convencionais do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vídeo 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="Diesel Mate Fogo 2.mp4" type="video/mp4">
+                                Seu navegador não suporta a exibição de vídeos HTML5.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Teste de Inflamabilidade e Queima</h5>
+                            <p class="card-text text-muted">Comparativo do poder de combustão e rendimento térmico do Diesel Mate.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vídeo 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom h-100">
+                        <div class="ratio ratio-16x9">
+                            <video controls>
+                                <source src="Diesel Mate e.mp4" type="video/mp4">
+                                Seu navegador não suporta a exibição de vídeos HTML5.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Análise de Mistura e Resíduos</h5>
+                            <p class="card-text text-muted">Apresentação detalhada sobre dissipação de resíduos e proteção de tanques de armazenamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Cotação com Consumo Anual -->
+    <section id="cotacao" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-section p-4 p-md-5">
+                        <h2 class="fw-bold text-center text-dark mb-2">Solicite uma Cotação Personalizada</h2>
+                        <p class="text-center text-muted mb-4">Informe o consumo da sua empresa para dimensionarmos a dosagem ideal de Diesel Mate.</p>
+                        
+                        <form id="quoteForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label font-weight-bold">Nome Completo *</label>
+                                    <input type="text" class="form-control" id="nome" required placeholder="Seu nome">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="empresa" class="form-label">Nome da Empresa / Cidade</label>
+                                    <input type="text" class="form-control" id="empresa" placeholder="Sua empresa ou localidade">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefone" class="form-label">Telefone / WhatsApp *</label>
+                                    <input type="tel" class="form-control" id="telefone" required placeholder="(00) 00000-0000">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+                                </div>
+                                
+                                <!-- CAMPO DE CONSUMO ANUAL DE DIESEL -->
+                                <div class="col-12">
+                                    <label for="consumo" class="form-label fw-bold text-primary">Consumo Anual de Diesel (em Litros) *</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control form-control-lg" id="consumo" required placeholder="Ex: 50000">
+                                        <span class="input-group-text">Litros / ano</span>
+                                    </div>
+                                    <small class="text-muted">Essa informação nos ajuda a calcular a dosagem exata e estimativa de economia.</small>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="observacoes" class="form-label">Tipo de Aplicação (Opcional)</label>
+                                    <select class="form-select" id="aplicacao">
+                                        <option value="Não especificado">Selecione o tipo de uso...</option>
+                                        <option value="Frota de Caminhões / Transporte">Frota de Caminhões / Transporte</option>
+                                        <option value="Máquinas Agrícolas / Construção">Máquinas Agrícolas / Construção</option>
+                                        <option value="Geradores de Energia">Geradores de Energia</option>
+                                        <option value="Tanques de Armazenamento">Tanques de Armazenamento</option>
+                                        <option value="Marítimo">Marítimo</option>
+                                        <option value="Outros">Outros</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 text-center mt-4">
+                                    <p class="fw-bold mb-2 text-dark">Escolha como deseja enviar seu pedido:</p>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <button type="button" class="btn btn-whatsapp btn-lg me-md-2" onclick="enviarWhatsApp()">
+                                            <i class="fab fa-whatsapp me-2"></i> Enviar via WhatsApp
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="enviarEmail()">
+                                            <i class="fas fa-envelope me-2"></i> Enviar via E-mail
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-black text-center text-white-50 py-3">
+        <div class="container">
+            <small>&copy; Bemhes Representação & NCH Latin America. Todos os direitos reservados.<br>
+            Contato: (43) 98842-8240 | bemhesrepresentacao@gmail.com</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts de envio automático do formulário -->
+    <script>
+        function obterDadosFormulario() {
+            return {
+                nome: document.getElementById('nome').value,
+                empresa: document.getElementById('empresa').value || 'Não informada',
+                telefone: document.getElementById('telefone').value,
+                email: document.getElementById('email').value || 'Não informado',
+                consumo: document.getElementById('consumo').value,
+                aplicacao: document.getElementById('aplicacao').value
+            };
+        }
+
+        function validarCampos(dados) {
+            if (!dados.nome || !dados.telefone || !dados.consumo) {
+                alert('Por favor, preencha os campos obrigatórios: Nome, Telefone e Consumo Anual de Diesel.');
+                return false;
+            }
+            return true;
+        }
+
+        function enviarWhatsApp() {
+            const dados = obterDadosFormulario();
+            if (!validarCampos(dados)) return;
+
+            const numeroWhatsApp = "5543988428240";
+            const mensagem = `*SOLICITAÇÃO DE COTAÇÃO - DIESEL MATE*%0A%0A` +
+                `*Nome:* ${dados.nome}%0A` +
+                `*Empresa:* ${dados.empresa}%0A` +
+                `*Telefone:* ${dados.telefone}%0A` +
+                `*E-mail:* ${dados.email}%0A` +
+                `*Consumo Anual de Diesel:* ${dados.consumo} Litros/ano%0A` +
+                `*Tipo de Aplicação:* ${dados.aplicacao}`;
+
+            window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagem}`, '_blank');
+        }
+
+        function enviarEmail() {
+            const dados = obterDadosFormulario();
+            if (!validarCampos(dados)) return;
+
+            const emailDestino = "bemhesrepresentacao@gmail.com";
+            const assunto = encodeURIComponent("Solicitação de Cotação - Diesel Mate");
+            const corpo = encodeURIComponent(
+                `Solicitação de Cotação - Diesel Mate NCH\n\n` +
+                `Nome: ${dados.nome}\n` +
+                `Empresa: ${dados.empresa}\n` +
+                `Telefone: ${dados.telefone}\n` +
+                `E-mail: ${dados.email}\n` +
+                `Consumo Anual de Diesel: ${dados.consumo} Litros/ano\n` +
+                `Tipo de Aplicação: ${dados.aplicacao}\n`
+            );
+
+            window.location.href = `mailto:${emailDestino}?subject=${assunto}&body=${corpo}`;
+        }
+    </script>
+</body>
+</html>
         }
         .card-custom:hover {
             transform: translateY(-5px);
